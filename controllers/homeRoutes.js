@@ -44,6 +44,27 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
+router.get('/editpost/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
+      ],
+    });
+
+    const post = postData.get({ plain: true });
+
+    res.render('editpost', {
+      ...post,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {

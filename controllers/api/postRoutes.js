@@ -37,7 +37,7 @@ router.delete('/:id', withAuth, async (req, res) => {
 
 router.put('/:id', withAuth, async (req, res) => {
   try {
-    const postData = await Post.update({
+    const postData = await Post.update(req.body, {
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
@@ -54,15 +54,5 @@ router.put('/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-// router.post('/newpost', withAuth, async (req, res) => {
-//   try {
-//     const postData = await Post.create({
-//       where: {
-
-//       }
-//     })
-//   }
-// })
 
 module.exports = router;

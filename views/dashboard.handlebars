@@ -1,6 +1,6 @@
 {{#if posts.length}}
   {{#each posts as |post|}}
-    <a href='/post/{{post.id}}'>
+    <a href='/editpost/{{post.id}}'>
       <div class='post-wrap'>
         <h3 class='post-title'>{{post.postTitle}}</h3>
         <p class='timestamp'>{{format_date post.date_created}}</p>
