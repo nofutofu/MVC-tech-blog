@@ -62,6 +62,10 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
+router.get('/newpost', withAuth, async (req, res) => {
+  res.render('newpost');
+});
+
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/dashboard');

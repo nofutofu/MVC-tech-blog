@@ -55,4 +55,14 @@ router.put('/:id', withAuth, async (req, res) => {
   }
 });
 
+// router.post('/newpost', withAuth, async (req, res) => {
+//   try {
+//     const postData = await Post.create({
+//       where: {
+
+//       }
+//     })
+//   }
+// })
+
 module.exports = router;
