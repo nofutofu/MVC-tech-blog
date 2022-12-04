@@ -1,8 +1,8 @@
 const handlePost = async event => {
   event.preventDefault();
 
-  const postTitle = document.querySelector('post-title').value.trim();
-  const postText = document.querySelector('post-text').value.trim();
+  const postTitle = document.querySelector('#post-title').value.trim();
+  const postText = document.querySelector('#post-text').value.trim();
 
   if (postTitle && postText) {
     const response = await fetch(`/api/posts`, {
@@ -19,4 +19,4 @@ const handlePost = async event => {
   }
 };
 
-document.querySelector('new-post-form').addEventListener('submit', handlePost);
+document.querySelector('.new-post-form').addEventListener('submit', handlePost);
