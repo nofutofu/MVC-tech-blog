@@ -1,0 +1,14 @@
+[
+  {
+    "postTitle": "I'm new to tech blog!!",
+    "postText": "I'm new here and I was wondering if anyone could help me or wanted to work together to set up a new web app idea I had?",
+    "date_created": "12/3/22",
+    "user_id": 2
+  },
+  {
+    "postTitle": "I'm not new to tech blog.",
+    "postText": "I'm not new here and I dont like people who are new here, I was wondering if anyone wanted to work together to hate on all these new guys?",
+    "date_created": "12/4/22",
+    "user_id": 1
+  }
+]
