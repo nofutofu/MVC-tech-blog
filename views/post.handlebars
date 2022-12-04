@@ -1,0 +1,31 @@
+<div class='post-wrapper'>
+  <div class='title-box'>
+    <h2 class='post-title'>{{post.postTitle}}</h2>
+    <p class='timestamp'>Posted by
+      {{post.user.username}}
+      on
+      {{format_date post.date_created}}</p>
+  </div>
+  <div class='post-text'>
+    <p>{{post.postText}}</p>
+  </div>
+</div>
+<div class='all-comments'>
+  {{#if post.comments.length}}
+    {{#each post.comments as |comment|}}
+      <div class='comment-wrapper'>
+        <div class="'title-box">
+          <p class='timestamp'>Posted by
+            {{comment.user.username}}
+            on
+            {{format_date comment.date_created}}</p>
+        </div>
+        <div class='comment-text'>
+          <p>{{comment.comText}}</p>
+        </div>
+      </div>
+    {{/each}}
+  {{/if}}
+</div>
+
+<script src='/js/post.js'></script>

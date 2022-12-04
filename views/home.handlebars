@@ -1,16 +1,20 @@
-{{#if posts.length}}
-  {{#each posts as |post|}}
-    <div class='post-wrapper'>
-      <div class='title-box'>
-        <h2 class='post-title'>{{post.postTitle}}</h2>
-        <p class='timestamp'>Posted by
-          {{post.user.username}}
-          on
-          {{format_date post.date_created}}</p>
+<div class='all-posts'>
+  {{#if posts.length}}
+    {{#each posts as |post|}}
+      <div class='post-wrapper'>
+        <a href='/post/{{post.id}}'>
+          <div class='title-box'>
+            <h2 class='post-title'>{{post.postTitle}}</h2>
+            <p class='timestamp'>Posted by
+              {{post.user.username}}
+              on
+              {{format_date post.date_created}}</p>
+          </div>
+        </a>
+        <div class='post-text'>
+          <p>{{post.postText}}</p>
+        </div>
       </div>
-      <div class='post-text'>
-        <p>{{post.postText}}</p>
-      </div>
-    </div>
-  {{/each}}
-{{/if}}
+    {{/each}}
+  {{/if}}
+</div>
