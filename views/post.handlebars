@@ -10,6 +10,20 @@
     <p>{{post.postText}}</p>
   </div>
 </div>
+<form class='comment-form'>
+  <div class='form-wrap'>
+    <label for='comment-text'>Comment</label>
+    <input class='form-input' type='text' id='comment-text' />
+    <div class='form-wrap'>
+      <button
+        value='{{post.id}}'
+        id='postId'
+        class='btn'
+        type='submit'
+      >Submit</button>
+    </div>
+  </div>
+</form>
 <div class='all-comments'>
   {{#if post.comments.length}}
     {{#each post.comments as |comment|}}

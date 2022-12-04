@@ -5,24 +5,24 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Tech Blog</title>
-    {{! <link rel='stylesheet' href='/css/style.css' /> }}
+    <link rel='stylesheet' href='/css/style.css' />
   </head>
 
   <body>
     <div class=''>
       <header class='navbar'>
         <nav>
-          <a href='/'>Home</a>
-          <a href='/dashboard'>Dashboard</a>
+          <a class='nav-piece' href='/'>Home</a>
+          <a class='nav-piece' href='/dashboard'>Dashboard</a>
           {{#if logged_in}}
-            <a href='/logout' class='logout-button' id='logout'>Logout</a>
+            <a href='/#' class='logout-button nav-piece' id='logout'>Logout</a>
           {{else}}
-            <a href='/login' class='login-button' id='login'>Login</a>
+            <a href='/login' class='login-button nav-piece' id='login'>Login</a>
           {{/if}}
         </nav>
         <h1 class='logo'>The Tech Blog</h1>
       </header>
-      <main class='main-content'>
+      <main class='mainContent'>
         {{{body}}}
       </main>
     </div>
