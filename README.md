@@ -6,14 +6,14 @@ This application is a demonstration of how a tech blog could function with backe
 
 ## Links
 
-- [Live](<> "Live View")
+- [Live]( 'Live View')
 
 ## Screenshots
 
 ![Home Page](/assets/screenshots/1.png 'Home Page')
-![Dashboard](/assets/screenshots/1.png 'Dashboard')
-![Login](/assets/screenshots/1.png 'Login')
-![Post Creation](/assets/screenshots/1.png 'Post Creation')
+![Dashboard](/assets/screenshots/2.png 'Dashboard')
+![Login](/assets/screenshots/3.png 'Login')
+![Editing Post](/assets/screenshots/4.png 'Editing Post')
 
 ## Built With
 
