@@ -6,7 +6,7 @@ This application is a demonstration of how a tech blog could function with backe
 
 ## Links
 
-- [Live]( 'Live View')
+- [Live](https://modelvc-tech-blog.herokuapp.com/ 'Live View')
 
 ## Screenshots
 
