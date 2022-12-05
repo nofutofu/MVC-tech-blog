@@ -1,0 +1,133 @@
+:root {
+  --brownish: rgb(48, 18, 8);
+  --greenish: rgb(91, 146, 122);
+}
+
+.navbar {
+  background-color: var(--brownish);
+  color: var(--greenish);
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.logo {
+  padding: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.mainContent {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--greenish);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-piece {
+  padding-right: 4rem;
+}
+
+.post-wrapper {
+  margin: 1rem;
+  background-color: var(--paleYellow);
+  padding: 0.2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 25px;
+  box-shadow: 2px 5px rgb(0, 0, 0);
+  min-width: 100%;
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-text {
+  padding-top: 2rem;
+}
+
+.post-wrap {
+  border: 3px solid silver;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 25px;
+  min-width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.new-post-btn {
+  font-size: 1.5rem;
+}
+
+.post-wrapped {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-header,
+.login-header {
+  padding-bottom: 3rem;
+}
+
+.edit-post-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.edit-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.form-input {
+  height: 3rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.login-wrapper,
+.post-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form,
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  line-height: 4rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login-btn,
+.switch,
+.new-btn {
+  margin-top: 1rem;
+}
